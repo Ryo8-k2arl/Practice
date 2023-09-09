@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+div {
+    /*margin-bottom: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 200px;*/
+    margin: 200px 200px 200px 250px;
+
+    width: calc(100%-500px);
+    height: 100px;
+    background-color: blueviolet;
+    transform: translate(-100px, 30px) rotate(90deg) skew(45deg);
+}
+
+p {
+    color: rgb(255, 0, 0);
+    /*background-image: url(./image/001-settings.png);
+    background-repeat: no-repeat;
+    background-color: palegreen;*/
+    background: url(./image/001-settings.png) palegreen no-repeat;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 2.5;
+    
+}
+
+.text {
+    color: cornflowerblue;
+}
+
+#text {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
