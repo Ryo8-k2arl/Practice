@@ -5,3 +5,7 @@ bin*
 
 #tmpファイルの追跡除外
 tmp*
+
+#TeX auxiliary file
+*.log
+*.synctex.gz
