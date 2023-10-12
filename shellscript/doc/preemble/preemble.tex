@@ -1,0 +1,64 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% rayouts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[top=20truemm,bottom=25truemm,left=25truemm,right=25truemm]{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% mathmatical formula %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath, amssymb}   %数式基本
+\usepackage{mathtools}          %amsmath拡張
+\usepackage{bm}                 %ベクトル太字
+\usepackage{amsthm}             %定理環境
+%         %         %         %  dfn  %         %         %         %
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}   %実部指定をローマン体
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}   %虚部指定をローマン体
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% table/figure %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}                           %
+\usepackage{here}                               %配置の拡張制御
+\usepackage[hang, small, bf]{caption}           %題名付け
+\usepackage{subcaption}                         %副題づけ
+\usepackage{wrapfig}                            %図表の回り込み
+%         %         %         %  dfn  %         %         %         %
+\captionsetup[subfigure]{labelformat=simple}    %sub図の書式変更
+\captionsetup[subtable]{labelformat=simple}     %sub表の書式変更
+\renewcommand{\thesubfigure}{(\alph{subfigure})}
+\renewcommand{\thesubtable}{(\alph{subtable})}
+\captionsetup{compatibility=false}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ref %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[hyphens]{url}                   %urlのハイパーリンク化
+\urlstyle{same}                             %urlのフォント変更禁則
+\usepackage{hyperref}
+%         %         %         %  dfn  %         %         %         %
+\newcommand{\tabref}[1] {表\ref{#1}}         %表の参照
+\newcommand{\figref}[1] {図\ref{#1}}         %図の参照
+\newcommand{\coderef}[1]{コード\ref{#1}}     %コードの参照
+\renewcommand{\eqref}[1]{式(\ref{#1})}      %式の参照
+\newcommand{\dnfref}[1] {定義 \ref{#1}}      %定義の参照
+\newcommand{\thmref}[1] {定理 \ref{#1}}      %定理の参照
+\newcommand{\propref}[1]{命題 \ref{#1}}      %命題の参照
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% other %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{letltxmacro}                    %マクロ作成
+\usepackage{tcolorbox}                      %装飾
+\tcbuselibrary{breakable, skins, theorems}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% setting command %%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand{\@cite}[1]{\textsuperscript{[#1]}}    %参照をwikipedia仕様に
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
