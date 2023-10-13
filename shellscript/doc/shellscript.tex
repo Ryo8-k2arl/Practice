@@ -3,14 +3,38 @@
 \input{./preemble/preemble_lua.tex}
 \input{./preemble/preemble.tex}
 
+\usepackage{bookmark}
+
 \begin{document}
 
 \title{shellscript}
 \author{Ryo.K}
 \maketitle
 
-shellscriptは拡張子がなくてもよい。
-ただし、C言語を扱う際に生成されたバイナリコードと区別ができなくなる。
-自作する場合は、拡張子を付けることが推奨される。
+\chapter{shellscript}
+\section{はじめに}
+
+\subsection{shellscriptとは}
+
+shellscriptはOSを操作するためのshell上で動作する簡易なプログラム（スクリプト言語）である。
+
+ファイルの拡張子は「.sh」であるが、なくてもよい。
+ただし、C言語を扱う際に生成されたバイナリコードと区別ができなくなるため、自作の場合はつけることが好ましく感じる。
+
+\subsection{shellscriptの実行}
+
+shellscriptの実行方法は複数ある。
+以下にその一例を挙げる。
+\begin{enumerate}
+    \item コマンドの引数を用いて実行する                %sh ./prog0101.sh
+    \item 実行権限を与え、スクリプトファイルとして実行      % sh ./prog0101.sh
+    \item コマンドとして実行                            % . prg0101.sh
+\end{enumerate}
+
+\subsubsection{コマンドの引数として実行}
+
+\subsubsection{スクリプトファイルとして実行}
+
+\subsubsection{コマンドとして実行}
 
 \end{document}
