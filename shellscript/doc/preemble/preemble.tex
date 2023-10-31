@@ -32,10 +32,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ref %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[hyphens]{url}                   %urlのハイパーリンク化
-\urlstyle{same}                             %urlのフォント変更禁則
-\usepackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% other %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{letltxmacro}                    %マクロ作成
+\usepackage{tcolorbox}                      %装飾
+\tcbuselibrary{breakable, skins, theorems}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% hyper ref %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{bookmark}                       %Hyper Linkパッケージ
+\hypersetup{
+    unicode,                                %UTF-8指定
+    hidelinks,                              %ハイパーリンクの囲みを消去
+    bookmarksnumbered=true,                 %しおりに章番号表示(デフォルト false)
+    colorlinks=true                         %ハイパーリンクの色付け
+}
+\usepackage{xurl}
 %         %         %         %  dfn  %         %         %         %
 \newcommand{\tabref}[1] {表\ref{#1}}         %表の参照
 \newcommand{\figref}[1] {図\ref{#1}}         %図の参照
@@ -44,13 +56,6 @@
 \newcommand{\dnfref}[1] {定義 \ref{#1}}      %定義の参照
 \newcommand{\thmref}[1] {定理 \ref{#1}}      %定理の参照
 \newcommand{\propref}[1]{命題 \ref{#1}}      %命題の参照
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% other %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{letltxmacro}                    %マクロ作成
-\usepackage{tcolorbox}                      %装飾
-\tcbuselibrary{breakable, skins, theorems}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

@@ -1,15 +1,21 @@
-\documentclass[a4paper, 12pt]{ltjsbook}
+\documentclass[luatex, a4paper, 12pt]{ltjsbook}
 
 \input{./preemble/preemble_lua.tex}
 \input{./preemble/preemble.tex}
 
-\usepackage{bookmark}
 
 \begin{document}
 
 \title{shellscript}
 \author{Ryo.K}
 \maketitle
+
+\frontmatter
+\section*{}
+\tableofcontents    %目次
+\mainmatter
+
+
 
 \chapter{shellscript}
 \section{はじめに}
@@ -26,9 +32,9 @@ shellscriptはOSを操作するためのshell上で動作する簡易なプロ�
 shellscriptの実行方法は複数ある。
 以下にその一例を挙げる。
 \begin{enumerate}
-    \item コマンドの引数を用いて実行する                %sh ./prog0101.sh
-    \item 実行権限を与え、スクリプトファイルとして実行      % sh ./prog0101.sh
-    \item コマンドとして実行                            % . prg0101.sh
+    \item コマンドの引数を用いて実行する                    %sh ./prog0101.sh
+    \item 実行権限を与え、スクリプトファイルとして実行          % sh ./prog0101.sh
+    \item コマンドとして実行                             % . prg0101.sh
 \end{enumerate}
 
 \subsubsection{コマンドの引数として実行}
@@ -37,4 +43,5 @@ shellscriptの実行方法は複数ある。
 
 \subsubsection{コマンドとして実行}
 
+\bibliographystyle{junsrt}
 \end{document}
