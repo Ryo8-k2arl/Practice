@@ -1,1 +1,3 @@
-echo "Hello. I am `whoam`."
+#!/bin/env sh
+
+echo "Hello. I am $(whoam)."
