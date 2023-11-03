@@ -1,6 +1,6 @@
 #!/bin/sh
 
-EXCPATH=$HOME/Practice/shellscript/code/Lesson01
+EXCPATH=./shellscript/code/Lesson01
 
 read -r a1
 if [ "$a1" = "y" ] || [ "$a1" = "Y" ]; then

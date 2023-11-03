@@ -1,6 +1,6 @@
 #!/bin/env sh
 
-EXCPATH=$HOME/Practice/shellscript/code/Lesson01
+EXCPATH=./shellscript/code/Lesson01
 read -r a1
 
 if [ "$a1" = "y"  -o  "$a1" = "Y" -a -x "$EXCPATH/prg0101.sh" ]; then
