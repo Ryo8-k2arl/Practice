@@ -10,6 +10,13 @@ else
     echo "No"
 fi
 
+read -r a2
+if test "$a2" = "y" -a -x "$EXCPATH/prg0101.sh" ; then
+    "$EXCPATH/prg0101.sh"
+else
+    echo "No"
+fi
+
 unset EXCPATH
 
 #Textは以下のようになっている
