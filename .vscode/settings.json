@@ -5,5 +5,6 @@
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "make $fileNameWithoutExt",
         "python": "python -u",
+        "shellscript": "cd $dir && sh -x $fileName && cd ~/Practice",
     }
 }
