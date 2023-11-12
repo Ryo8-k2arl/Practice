@@ -9,3 +9,8 @@ tmp*
 #TeX auxiliary file
 *.log
 *.synctex.gz
+
+# C言語により生成されるバイナリファイルの追跡除外
+*
+!*.*
+!*/
